@@ -1,0 +1,108 @@
+.page {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: Roboto, sans-serif;
+}
+.list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.block {
+	width: 60%;
+	max-width: 800px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.header {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	height: 340px;
+	background: #EC174F;
+	padding: 10px;
+}
+.header::after {
+	content: '';
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	background: #fff;
+	-webkit-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	        transform: rotate(45deg);
+	right: -60px;
+	top: -60px;
+}
+.header__title {
+	font-size: 30px;
+	color: #fff;
+}
+.header__params {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.params__item {
+	padding: 1px 6px;
+	color: #EC174F;
+	background: #fff;
+	font-size: 15px;
+	
+}
+.main {
+	padding-top: 20px;
+}
+.main-list__item {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	margin-bottom: 10px;
+}
+.main-list__num-wrap { 
+	display: -webkit-box; 
+	display: -ms-flexbox; 
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-ms-flex-negative: 0;
+	    flex-shrink: 0;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	width: 30px;
+	height: 30px;
+	padding: 10px;
+	background: #EC174F;
+	border-radius: 30px;
+	-ms-flex-item-align: start;
+	    align-self: flex-start;
+}
+.main-list__num {
+	display: block;
+	font-size: 30px;
+	color: #fff;
+}
+.main-list__desc {
+	padding-left: 10px;
+	font-size: 15px;
+}
